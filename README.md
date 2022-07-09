@@ -35,7 +35,4 @@ Current Role:
  De qué se trata tu caso? (text area).
  .......
  
- Enviar
-
- ** Estoy probando si funciona el sync con github **
- 
+ Enviar 
