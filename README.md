@@ -28,9 +28,9 @@ Current Role:
   - Otro
  
  ¿Haz consultado ya con otro abogado? (Radio buttons)
- Si
- No
- Prefiero no decirlo
+ Si,
+ No,
+ Prefiero no decirlo.
  
  De qué se trata tu consulta? (Option list)
  - Derecho de Familia (divorcio, pensión de alimentos, etc)
