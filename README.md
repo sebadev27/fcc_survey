@@ -1,7 +1,7 @@
 # fcc_survey
-Repository Title: FreCodeCamp Survey Project 
+Repository Title: FreCodeCamp Survey Project (contact form).
 
-Main feature: mobile first survey 
+Main feature: mobile first contact form.
 
 Objective: Contact form to get a lawyer.
 
