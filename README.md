@@ -1,17 +1,24 @@
 # fcc_survey
 Repository Title: FreCodeCamp Survey Project 
+
 Main feature: mobile first survey 
+
 Objective: Contact form to get a lawyer.
+
 ** Since this is for me, a chilean Lawyer, the contact form will be in spanish. **
 
 Structure:
 
 Title: Formulario de Contacto
-Subtitle: Rellena el formulario y me comunicaré contigo a la brevedad.
+
+Subtitle or description: Rellena el formulario y me comunicaré contigo a la brevedad.
 
 Nombre
+
 Email
+
 Edad (opcional)
+
 Current Role:
   - Estudiante
   - Trabajador independiente
