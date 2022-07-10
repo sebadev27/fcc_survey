@@ -7,10 +7,15 @@
   margin-top: 60px;
 }
 
-header {
-  background-color:red;
+header, header > p {
+  outline: solid 2px red;
 }
 
-div {
-  color: red;
+form {
+  color: blue;
+  outline: solid 2px greenyellow;
+}
+
+fieldset {
+  outline: solid 2px blue;
 }
