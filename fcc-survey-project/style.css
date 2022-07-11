@@ -1,21 +1,29 @@
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+/* Se aplica los estilos universales estandar, aunque no estoy seguro sobre el efecto del color de fondo (aunque me sirve para identificar cada elemento) */
+/* La fuente roboto creo que es provisional aunque no se ve mal */
+/* Universal reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-header, header > p {
-  outline: solid 2px red;
+html, body {
+  height: 100%;
 }
 
-form {
-  color: blue;
-  outline: solid 2px greenyellow;
+body {
+  line-height: 1.5;
 }
 
-fieldset {
-  outline: solid 2px blue;
+input, button, textarea, select {
+  font: inherit;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+header, body {
+  width: 100vw;
+}
+
+/*# sourceMappingURL=style.css.map */

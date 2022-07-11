@@ -1,0 +1,68 @@
+// Este el partial de Base, acá van por ej. variables principales y selectores universales // 
+
+/* Se aplica los estilos universales estandar, aunque no estoy seguro sobre el efecto del color de fondo (aunque me sirve para identificar cada elemento) */
+/* La fuente roboto creo que es provisional aunque no se ve mal */
+
+// Variables //
+
+$font-size-title: 1.5rem;
+$font-size-text: 1.3rem;
+$background-color:#333; // Cambiar color
+$primary-color: white; // Cambiar color
+$secondary-color: black; // Cambiar color
+$third-color: rgb(235, 235, 235); // Cambiar color
+$blue-key: rgb(96, 158, 241); // Cambiar color
+$hover-grey: rgb(255, 255, 255); // Cambiar color
+$hover-green: rgb(2, 71, 14); // Cambiar color
+$background-blue: rgba(6, 25, 34, 0.795); // Cambiar color
+
+// Variable para testear //
+$color-marcos: #fadd90;
+$cuadro-rojo: dotted red;
+
+
+// Mixin //
+
+@mixin cuadro-rojo {
+  outline: solid red;
+}
+
+@mixin cuadro-verde {
+  outline: solid green;
+}
+
+@mixin botones {
+  position: relative;
+  display: inline-flex;
+  width: minmax(fit-content, 3rem);
+  height: minmax(fit-content, 3rem);
+  padding: 0.8rem;
+  border-radius: 1.7rem;
+  text-decoration: none;
+  font-size: $font-size-text;
+  transition-duration: 0.3s;
+}
+
+
+/* Universal reset */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
