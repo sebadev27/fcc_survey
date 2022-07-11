@@ -20,10 +20,24 @@
         <label>Número de teléfono (opcional)<input type="number" name="phone" pattern="[a-z0-5]{8,}"/></label>
       </fieldset>
       <fieldset>
-        <p>¿Has consultado con otro abogado sobre la causa?</p>
+        <p>¿Has consultado con otro abogado?</p>
         <label><input type="radio" name="consult-lawyer" class="inline" /> Ya he consultado</label>
         <label><input type="radio" name="consult-lawyer" class="inline" /> No lo he hecho</label>
+        <label>Tu consulta es de derecho:
+          <select name="referrer">
+          <option value="">(selecciona el área)</option>
+          <option value="1">Derecho de Familia (divorcios, pensión de alimentos, etc)</option>
+          <option value="2">Derecho Laboral</option>
+          <option value="3">Derecho Civil</option>
+          <option value="4">Derecho penal</option>
+          <option value="4">Otro</option>
+          </select>
+        </label>
+        <label>Escribe tu consulta aquí:
+          <textarea name="consult-text" rows="3" cols="30" placeholder="Me gustaría consultarte por..."></textarea>
+			  </label>
       </fieldset>
+      <input type="submit" value="enviar" />
     </form>
   </body>
 </html>
