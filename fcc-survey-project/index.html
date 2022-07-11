@@ -15,9 +15,14 @@
       <fieldset>
         <label>Nombres: <input type="text" name="first-name" required /></label>
         <label>Apellidos: <input type="text" name="last-name" required /></label>
-        <label>Dirección <input type="text" name="last-name" required /></label>
+        <label>Comuna <input type="text" name="address" required /></label>
         <label>Correo electrónico: <input type="email" name="email" required /></label>
-        <label>Número de teléfono (opcional)<input type="tel" name="phone" pattern="[a-z0-5]{8,}" /></label>
+        <label>Número de teléfono (opcional)<input type="number" name="phone" pattern="[a-z0-5]{8,}"/></label>
+      </fieldset>
+      <fieldset>
+        <p>¿Has consultado con otro abogado sobre la causa?</p>
+        <label><input type="radio" name="consult-lawyer" class="inline" /> Ya he consultado</label>
+        <label><input type="radio" name="consult-lawyer" class="inline" /> No lo he hecho</label>
       </fieldset>
     </form>
   </body>

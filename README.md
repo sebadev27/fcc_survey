@@ -17,7 +17,7 @@ Nombre
 
 Email
 
-Edad (opcional)
+Telefono (opcional)
 
 Current Role:
   - Estudiante
