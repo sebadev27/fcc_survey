@@ -19,10 +19,7 @@
       <form action="'https://register-demo.freecodecamp.org'">
         <fieldset>
           <label
-            >Nombres: <input type="text" name="first-name" required
-          /></label>
-          <label
-            >Apellidos: <input type="text" name="last-name" required
+            >Nombre: <input type="text" name="first-name" required
           /></label>
           <label>Comuna <input type="text" name="address" required /></label>
           <label
@@ -36,26 +33,24 @@
           /></label>
         </fieldset>
         <fieldset>
-          <p>¿Has consultado con otro abogado?</p>
-          <label
-            ><input type="radio" name="consult-lawyer" class="inline" /> Ya he
-            consultado</label
+          <p class="otro-abogado">¿Has consultado con otro abogado?</p>
+          <label class="otro-abogado-opciones"
+            ><input type="radio" name="consult-lawyer" class="radio-btn" /> Ya
+            he consultado</label
           >
-          <label
-            ><input type="radio" name="consult-lawyer" class="inline" /> No lo
-            he hecho</label
+          <label class="otro-abogado-opciones"
+            ><input type="radio" name="consult-lawyer" class="radio-btn" /> No
+            lo he hecho</label
           >
           <label
             >Tu consulta es de derecho:
-            <select name="referrer">
+            <select name="referrer" class="select-area">
               <option value="">(selecciona el área)</option>
-              <option value="1">
-                Derecho de Familia (divorcios, pensión de alimentos, etc)
-              </option>
+              <option value="1">Derecho de Familia</option>
               <option value="2">Derecho Laboral</option>
               <option value="3">Derecho Civil</option>
               <option value="4">Derecho penal</option>
-              <option value="4">Otro</option>
+              <option value="4">Otro / No lo sé</option>
             </select>
           </label>
           <label

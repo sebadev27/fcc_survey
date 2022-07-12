@@ -39,6 +39,7 @@ body {
   color: black;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
+  font-style: 400;
 }
 
 .container {
@@ -48,8 +49,8 @@ body {
   justify-content: center;
   align-self: center;
   background-color: #7f7caf;
-  outline: solid red;
   margin: 1rem auto;
+  border-radius: 0.5rem;
 }
 
 h1 {
@@ -57,24 +58,35 @@ h1 {
   padding: 0;
   text-align: center;
   font-size: 1.8rem;
+  font-weight: 800;
 }
 
 .subtitle {
   outline: solid green;
   text-align: center;
   margin-top: 0.5rem;
+  font-weight: 500;
 }
 
 form {
   outline: solid red;
   margin-top: 1rem;
+  width: 100%;
+}
+
+fieldset {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 label,
 input {
+  position: relative;
   display: block;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
 label {
@@ -83,7 +95,52 @@ label {
 
 input {
   border-radius: 0.3rem;
-  height: 2.5rem;
+  height: 2.3rem;
+}
+
+select {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  position: relative;
+}
+
+.otro-abogado {
+  margin-bottom: 0.5rem;
+  outline: solid yellow;
+}
+
+.otro-abogado-opciones {
+  padding: 0.2rem;
+  margin: 0;
+}
+
+.radio-btn {
+  display: inline;
+  width: unset;
+  height: 1rem;
+  align-self: center;
+  margin: 0;
+}
+
+.select-area,
+option {
+  width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 /*# sourceMappingURL=style.css.map */

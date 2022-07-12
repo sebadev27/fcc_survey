@@ -6,6 +6,7 @@ body {
   color: black;
   font-family: $font-family;
   font-size: $font-size-text;
+  font-style: $fw-Regular-400;
 }
 
 .container {
@@ -15,8 +16,8 @@ body {
   justify-content: center;
   align-self: center;
   background-color: $primary-color;
-  @include cuadro-rojo;
   margin: 1rem auto;
+  border-radius: 0.5rem;
 }
 
 h1 {
@@ -24,24 +25,35 @@ h1 {
   padding: 0;
   text-align: center;
   font-size: $font-size-title;
+  font-weight: $fw-ExtraBold-800;
 }
 
 .subtitle {
   @include cuadro-verde;
   text-align: center;
   margin-top: 0.5rem;
+  font-weight: $fw-Medium-500;
 }
 
 form {
   @include cuadro-rojo;
   margin-top: 1rem;
+  width: 100%;
+}
+
+fieldset {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 label,
 input {
+  position: relative;
   display: block;
   width: 100%;
-  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
 label {
@@ -50,5 +62,52 @@ label {
 
 input {
   border-radius: 0.3rem;
-  height: 2.5rem;
+  height: 2.3rem;
+}
+
+select {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+p {
+  width: 100%;
+  position: relative;
+}
+
+.otro-abogado {
+  margin-bottom: 0.5rem;
+  @include cuadro-amarillo;
+}
+
+.otro-abogado-opciones {
+  padding: 0.2rem;
+  margin: 0;
+}
+
+.radio-btn {
+  display: inline;
+  width: unset;
+  height: 1rem;
+  align-self: center;
+  margin: 0;
+}
+
+.select-area,
+option {
+  width: 100%;
+  position: relative;
+  width: 100%;
+}
+
+textarea {
+  position: relative;
+  width: 100%;
+}
+
+//
+
+input[type="number"] {
+  -moz-appearance: textfield;
 }
