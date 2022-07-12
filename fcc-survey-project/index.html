@@ -3,41 +3,67 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Formulario de Contacto</title>
   </head>
-  <header>
-    <h1>Formulario de contacto</h1>
-    <p>Rellena el formulario y me comunicaré contigo a la brevedad.</p>
-  </header>
   <body>
-    <form action="'https://register-demo.freecodecamp.org'">
-      <fieldset>
-        <label>Nombres: <input type="text" name="first-name" required /></label>
-        <label>Apellidos: <input type="text" name="last-name" required /></label>
-        <label>Comuna <input type="text" name="address" required /></label>
-        <label>Correo electrónico: <input type="email" name="email" required /></label>
-        <label>Número de teléfono (opcional)<input type="number" name="phone" pattern="[a-z0-5]{8,}"/></label>
-      </fieldset>
-      <fieldset>
-        <p>¿Has consultado con otro abogado?</p>
-        <label><input type="radio" name="consult-lawyer" class="inline" /> Ya he consultado</label>
-        <label><input type="radio" name="consult-lawyer" class="inline" /> No lo he hecho</label>
-        <label>Tu consulta es de derecho:
-          <select name="referrer">
-          <option value="">(selecciona el área)</option>
-          <option value="1">Derecho de Familia (divorcios, pensión de alimentos, etc)</option>
-          <option value="2">Derecho Laboral</option>
-          <option value="3">Derecho Civil</option>
-          <option value="4">Derecho penal</option>
-          <option value="4">Otro</option>
-          </select>
-        </label>
-        <label>Escribe tu consulta aquí:
-          <textarea name="consult-text" rows="3" cols="30" placeholder="Me gustaría consultarte por..."></textarea>
-			  </label>
-      </fieldset>
-      <input type="submit" value="enviar" />
-    </form>
+    <div class="container">
+      <h1>Formulario de contacto</h1>
+      <p class="subtitle">Me comunicaré contigo a la brevedad.</p>
+      <form action="'https://register-demo.freecodecamp.org'">
+        <fieldset>
+          <label
+            >Nombres: <input type="text" name="first-name" required
+          /></label>
+          <label
+            >Apellidos: <input type="text" name="last-name" required
+          /></label>
+          <label>Comuna <input type="text" name="address" required /></label>
+          <label
+            >Correo electrónico: <input type="email" name="email" required
+          /></label>
+          <label
+            >Número de teléfono (opcional)<input
+              type="number"
+              name="phone"
+              pattern="[a-z0-5]{8,}"
+          /></label>
+        </fieldset>
+        <fieldset>
+          <p>¿Has consultado con otro abogado?</p>
+          <label
+            ><input type="radio" name="consult-lawyer" class="inline" /> Ya he
+            consultado</label
+          >
+          <label
+            ><input type="radio" name="consult-lawyer" class="inline" /> No lo
+            he hecho</label
+          >
+          <label
+            >Tu consulta es de derecho:
+            <select name="referrer">
+              <option value="">(selecciona el área)</option>
+              <option value="1">
+                Derecho de Familia (divorcios, pensión de alimentos, etc)
+              </option>
+              <option value="2">Derecho Laboral</option>
+              <option value="3">Derecho Civil</option>
+              <option value="4">Derecho penal</option>
+              <option value="4">Otro</option>
+            </select>
+          </label>
+          <label
+            >Escribe tu consulta aquí:
+            <textarea
+              name="consult-text"
+              rows="3"
+              cols="30"
+              placeholder="Me gustaría consultarte por..."
+            ></textarea>
+          </label>
+        </fieldset>
+        <input type="submit" value="enviar" />
+      </form>
+    </div>
   </body>
 </html>

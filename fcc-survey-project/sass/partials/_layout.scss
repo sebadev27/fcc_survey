@@ -1,1 +1,47 @@
-// Este el partial del Layout, ej. containers y el sistema de grid // 
+// Este el partial del Layout, ej. containers y el sistema de grid //
+
+body {
+  width: 100vw;
+  background-color: $background-color;
+  color: black;
+}
+
+.container {
+  width: 90vw;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  align-self: center;
+  background-color: $primary-color;
+  @include cuadro-rojo;
+  margin: 1rem auto;
+}
+
+h1 {
+  @include cuadro-rojo;
+  padding: 0;
+  text-align: center;
+}
+
+.subtitle {
+  @include cuadro-verde;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+form {
+  @include cuadro-rojo;
+  margin-top: 1rem;
+}
+
+label,
+input {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+input {
+  border-radius: 0.3rem;
+  height: 2.5rem;
+}
