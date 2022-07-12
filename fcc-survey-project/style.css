@@ -1,6 +1,4 @@
-/* Se aplica los estilos universales estandar, aunque no estoy seguro sobre el efecto del color de fondo (aunque me sirve para identificar cada elemento) */
-/* La fuente roboto creo que es provisional aunque no se ve mal */
-/* Universal reset */
+/* RESETS */
 *,
 *::before,
 *::after {
@@ -39,6 +37,8 @@ body {
   width: 100vw;
   background-color: #1e212b;
   color: black;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
 }
 
 .container {
@@ -56,6 +56,7 @@ h1 {
   outline: solid red;
   padding: 0;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .subtitle {
@@ -74,6 +75,10 @@ input {
   display: block;
   width: 100%;
   margin-top: 0.5rem;
+}
+
+label {
+  outline: solid yellow;
 }
 
 input {

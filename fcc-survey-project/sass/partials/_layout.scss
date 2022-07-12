@@ -4,6 +4,8 @@ body {
   width: 100vw;
   background-color: $background-color;
   color: black;
+  font-family: $font-family;
+  font-size: $font-size-text;
 }
 
 .container {
@@ -21,6 +23,7 @@ h1 {
   @include cuadro-rojo;
   padding: 0;
   text-align: center;
+  font-size: $font-size-title;
 }
 
 .subtitle {
@@ -39,6 +42,10 @@ input {
   display: block;
   width: 100%;
   margin-top: 0.5rem;
+}
+
+label {
+  @include cuadro-amarillo;
 }
 
 input {

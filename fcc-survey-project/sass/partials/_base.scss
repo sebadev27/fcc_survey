@@ -1,12 +1,9 @@
 // Este el partial de Base, acá van por ej. variables principales y selectores universales //
 
-/* Se aplica los estilos universales estandar, aunque no estoy seguro sobre el efecto del color de fondo (aunque me sirve para identificar cada elemento) */
-/* La fuente roboto creo que es provisional aunque no se ve mal */
+// VARIABLES //
 
-// Variables //
+// Colors //
 
-$font-size-title: 1.5rem;
-$font-size-text: 1.3rem;
 $background-color: #1e212b;
 $primary-color: #7f7caf;
 $secondary-color: #ffeed6;
@@ -16,11 +13,21 @@ $hover-grey: rgb(255, 255, 255); // Cambiar color
 $hover-green: rgb(2, 71, 14); // Cambiar color
 $background-blue: rgba(6, 25, 34, 0.795); // Cambiar color
 
-// Variable para testear //
-$color-marcos: #fadd90;
-$cuadro-rojo: dotted red;
+// Font //
 
-// Mixin //
+$font-family: "Inter", sans-serif;
+
+$fw-Regular-400: 400;
+$fw-Medium-500: 500;
+$fw-Bold-700: 700;
+$fw-ExtraBold-800: 800;
+
+$font-size-title: 1.8rem;
+$font-size-text: 1rem;
+
+// MIXIN //
+
+// Outline for guidance purpose //
 
 @mixin cuadro-rojo {
   outline: solid red;
@@ -29,6 +36,16 @@ $cuadro-rojo: dotted red;
 @mixin cuadro-verde {
   outline: solid green;
 }
+
+@mixin cuadro-amarillo {
+  outline: solid yellow;
+}
+
+@mixin cuadro-violeta {
+  outline: solid blueviolet;
+}
+
+// For buttons //
 
 @mixin botones {
   position: relative;
@@ -42,7 +59,7 @@ $cuadro-rojo: dotted red;
   transition-duration: 0.3s;
 }
 
-/* Universal reset */
+/* RESETS */
 
 *,
 *::before,
